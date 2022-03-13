@@ -1,0 +1,67 @@
+Input file: ./P3-6.ss
+   1: (define (function1 V1 V2)
+	LPAREN_T        (
+	DEFINE_T        define
+	LPAREN_T        (
+	IDENT_T         function1
+	IDENT_T         V1
+	IDENT_T         V2
+	RPAREN_T        )
+   2: 	(if (< V1 V2)
+	LPAREN_T        (
+	IF_T            if
+	LPAREN_T        (
+	LT_T            <
+	IDENT_T         V1
+	IDENT_T         V2
+	RPAREN_T        )
+   3: 		(display (+ V1 V2))
+	LPAREN_T        (
+	DISPLAY_T       display
+	LPAREN_T        (
+	PLUS_T          +
+	IDENT_T         V1
+	IDENT_T         V2
+	RPAREN_T        )
+	RPAREN_T        )
+   4: 	)
+	RPAREN_T        )
+   5: )
+	RPAREN_T        )
+   6: 
+   7: (define (main)
+	LPAREN_T        (
+	DEFINE_T        define
+	LPAREN_T        (
+	IDENT_T         main
+	RPAREN_T        )
+   8: 	(function1 3 5)
+	LPAREN_T        (
+	IDENT_T         function1
+	NUMLIT_T        3
+	NUMLIT_T        5
+	RPAREN_T        )
+   9: 	(newline)
+	LPAREN_T        (
+	NEWLINE_T       newline
+	RPAREN_T        )
+  10: 	(function1 13 5)
+	LPAREN_T        (
+	IDENT_T         function1
+	NUMLIT_T        13
+	NUMLIT_T        5
+	RPAREN_T        )
+  11: 	(newline)
+	LPAREN_T        (
+	NEWLINE_T       newline
+	RPAREN_T        )
+  12: )
+	RPAREN_T        )
+  13: 
+  14: (main)
+	LPAREN_T        (
+	IDENT_T         main
+	RPAREN_T        )
+	EOF_T           
+	EOF_T           
+0 errors found in input file

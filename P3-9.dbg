@@ -1,0 +1,102 @@
+Input file: ./P3-9.ss
+   1: (define (arithmetic a b c)
+	LPAREN_T        (
+	DEFINE_T        define
+	LPAREN_T        (
+	IDENT_T         arithmetic
+	IDENT_T         a
+	IDENT_T         b
+	IDENT_T         c
+	RPAREN_T        )
+   2: 	(+ (* (+ a 2) (+ b 3) (+ c 4)) (/ a b) (modulo (round (/ c b)) 2) (- a b c))
+	LPAREN_T        (
+	PLUS_T          +
+	LPAREN_T        (
+	MULT_T          *
+	LPAREN_T        (
+	PLUS_T          +
+	IDENT_T         a
+	NUMLIT_T        2
+	RPAREN_T        )
+	LPAREN_T        (
+	PLUS_T          +
+	IDENT_T         b
+	NUMLIT_T        3
+	RPAREN_T        )
+	LPAREN_T        (
+	PLUS_T          +
+	IDENT_T         c
+	NUMLIT_T        4
+	RPAREN_T        )
+	RPAREN_T        )
+	LPAREN_T        (
+	DIV_T           /
+	IDENT_T         a
+	IDENT_T         b
+	RPAREN_T        )
+	LPAREN_T        (
+	MODULO_T        modulo
+	LPAREN_T        (
+	ROUND_T         round
+	LPAREN_T        (
+	DIV_T           /
+	IDENT_T         c
+	IDENT_T         b
+	RPAREN_T        )
+	RPAREN_T        )
+	NUMLIT_T        2
+	RPAREN_T        )
+	LPAREN_T        (
+	MINUS_T         -
+	IDENT_T         a
+	IDENT_T         b
+	IDENT_T         c
+	RPAREN_T        )
+	RPAREN_T        )
+   3: )
+	RPAREN_T        )
+   4: 
+   5: (define (main)
+	LPAREN_T        (
+	DEFINE_T        define
+	LPAREN_T        (
+	IDENT_T         main
+	RPAREN_T        )
+   6: 	(display (arithmetic 1.0 3.0 5.0))
+	LPAREN_T        (
+	DISPLAY_T       display
+	LPAREN_T        (
+	IDENT_T         arithmetic
+	NUMLIT_T        1.0
+	NUMLIT_T        3.0
+	NUMLIT_T        5.0
+	RPAREN_T        )
+	RPAREN_T        )
+   7: 	(newline)
+	LPAREN_T        (
+	NEWLINE_T       newline
+	RPAREN_T        )
+   8: 	(display (arithmetic 1.1 3.3 5.5))
+	LPAREN_T        (
+	DISPLAY_T       display
+	LPAREN_T        (
+	IDENT_T         arithmetic
+	NUMLIT_T        1.1
+	NUMLIT_T        3.3
+	NUMLIT_T        5.5
+	RPAREN_T        )
+	RPAREN_T        )
+   9: 	(newline)
+	LPAREN_T        (
+	NEWLINE_T       newline
+	RPAREN_T        )
+  10: )
+	RPAREN_T        )
+  11: 
+  12: (main)
+	LPAREN_T        (
+	IDENT_T         main
+	RPAREN_T        )
+	EOF_T           
+	EOF_T           
+0 errors found in input file

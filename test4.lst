@@ -1,0 +1,47 @@
+Input file: test4.ss
+   1: 
+   2: (define (function1)
+   3: 	(display (+ 6 3))
+   4: 	(newline)
+   5: 	(display (+ 4.1 2.6))
+   6: 	(newline)
+   7: )
+   8: 
+   9: (define (function2)
+  10: 	(display (- 6 3))
+  11: 	(newline)
+  12: 	(display (- 4.1 2.6))
+  13: 	(newline)
+  14: )
+  15: 
+  16: (define (function3)
+  17: 	(display (* 6 3))
+  18: 	(newline)
+  19: 	(display (* 4.1 2.6))
+  20: 	(newline)
+  21: )
+  22: 
+  23: (define (function4)
+  24: 	(display (/ 6 3))
+  25: 	(newline)
+  26: 	(display (/ 4.1 2.6))
+  27: 	(newline)
+  28: )
+  29: 
+  30: (define (function6)
+  31: 	(display (modulo 6 3))
+  32: 	(newline)
+  33: 	(display (modulo 14 8))
+  34: 	(newline)
+  35: )
+  36: 
+  37: (define (main)
+  38: 	(function1)
+  39: 	(function2)
+  40: 	(function3)
+  41: 	(function4)
+  42: 	(function6)
+  43: )
+  44: 
+  45: (main)
+0 errors found in input file

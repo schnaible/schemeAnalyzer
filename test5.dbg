@@ -1,0 +1,40 @@
+Input file: test5.ss
+   1: 
+   2: (define (function1)
+	LPAREN_T        (
+	DEFINE_T        define
+	LPAREN_T        (
+	IDENT_T         function1
+	RPAREN_T        )
+   3: 	6
+	NUMLIT_T        6
+   4: )
+	RPAREN_T        )
+   5: 
+   6: (define (main)
+	LPAREN_T        (
+	DEFINE_T        define
+	LPAREN_T        (
+	IDENT_T         main
+	RPAREN_T        )
+   7: 	(display (function1))
+	LPAREN_T        (
+	DISPLAY_T       display
+	LPAREN_T        (
+	IDENT_T         function1
+	RPAREN_T        )
+	RPAREN_T        )
+   8: 	(newline)
+	LPAREN_T        (
+	NEWLINE_T       newline
+	RPAREN_T        )
+   9: )
+	RPAREN_T        )
+  10: 
+  11: (main)
+	LPAREN_T        (
+	IDENT_T         main
+	RPAREN_T        )
+	EOF_T           
+	EOF_T           
+0 errors found in input file

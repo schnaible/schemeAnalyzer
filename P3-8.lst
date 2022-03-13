@@ -1,0 +1,21 @@
+Input file: ./P3-8.ss
+   1: (define (sum L)
+   2: 	(if (null? L)
+   3: 		0
+   4: 		(+ (car L) (sum (cdr L)))
+   5: 	)
+   6: )
+   7: 
+   8: (define (main)
+   9: 	(let ((l1 '(3 5)) (l2 '(13 3.5 4 7.8 12 5)))
+  10: 		(display (sum l1))
+  11: 		(newline)
+  12: 		(display (sum l2))
+  13: 		(newline)
+  14: 		(display (sum (append l1 l2)))
+  15: 		(newline)
+  16: 	)
+  17: )
+  18: 
+  19: (main)
+0 errors found in input file

@@ -1,0 +1,29 @@
+Input file: ./P3-A.ss
+   1: (define (funky p ls)
+   2: 	(let ((v (* 2 p)))
+   3: 		(cond 	((<= v 10)
+   4: 				(if (> v 5)
+   5: 					(* (+ v) (- v))
+   6: 					(round (/ v (modulo v 3)))
+   7: 				)) 
+   8: 			((= v 11) (cons v ls))
+   9: 			((< v 13) (cdar ls))
+  10: 			((or (number? v) (list? ls) (zero? v) (string? v)) v)
+  11: 			(else (cond ((null? ls) "empty")))
+  12: 		)
+  13: 	)
+  14: )
+  15: 
+  16: (define (main)
+  17: 	(if (and (>= 7 5) (not (>= 5 7)))
+  18: 		(display (funky 5 '(a 5 "hello world" cons if display
+  19: 			    newline cadr and or not define let 
+  20: 			    number? list? zero? null?
+  21: 			    string? + - / * modulo round = > < >=
+  22: 			    <= 'cond else)))
+  23: 	)
+  24: 	(newline)
+  25: )
+  26: 
+  27: (main)
+0 errors found in input file

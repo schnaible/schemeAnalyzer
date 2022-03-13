@@ -1,0 +1,15 @@
+(define (function1 V1 V2)
+	(if (< V1 V2)
+		(+ V1 V2)
+		(* V1 V2)
+	)
+)
+
+(define (main)
+	(display (function1 3 6))
+	(newline)
+	(display (function1 14 6))
+	(newline)
+)
+
+(main)

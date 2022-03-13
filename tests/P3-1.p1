@@ -1,0 +1,18 @@
+	LPAREN_T        (
+	DEFINE_T        define
+	LPAREN_T        (
+	IDENT_T         main
+	RPAREN_T        )
+	LPAREN_T        (
+	DISPLAY_T       display
+	NUMLIT_T        0
+	RPAREN_T        )
+	LPAREN_T        (
+	NEWLINE_T       newline
+	RPAREN_T        )
+	RPAREN_T        )
+	LPAREN_T        (
+	IDENT_T         main
+	RPAREN_T        )
+	EOF_T           
+	EOF_T           

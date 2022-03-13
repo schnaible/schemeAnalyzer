@@ -1,0 +1,25 @@
+Input file: ./P3-1.ss
+   1: (define (main)
+	LPAREN_T        (
+	DEFINE_T        define
+	LPAREN_T        (
+	IDENT_T         main
+	RPAREN_T        )
+   2: 	(display 0) (newline)
+	LPAREN_T        (
+	DISPLAY_T       display
+	NUMLIT_T        0
+	RPAREN_T        )
+	LPAREN_T        (
+	NEWLINE_T       newline
+	RPAREN_T        )
+   3: )
+	RPAREN_T        )
+   4: 
+   5: (main)
+	LPAREN_T        (
+	IDENT_T         main
+	RPAREN_T        )
+	EOF_T           
+	EOF_T           
+0 errors found in input file

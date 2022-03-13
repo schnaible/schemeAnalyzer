@@ -1,0 +1,224 @@
+Input file: ./P3-A.ss
+   1: (define (funky p ls)
+	LPAREN_T        (
+	DEFINE_T        define
+	LPAREN_T        (
+	IDENT_T         funky
+	IDENT_T         p
+	IDENT_T         ls
+	RPAREN_T        )
+   2: 	(let ((v (* 2 p)))
+	LPAREN_T        (
+	LET_T           let
+	LPAREN_T        (
+	LPAREN_T        (
+	IDENT_T         v
+	LPAREN_T        (
+	MULT_T          *
+	NUMLIT_T        2
+	IDENT_T         p
+	RPAREN_T        )
+	RPAREN_T        )
+	RPAREN_T        )
+   3: 		(cond 	((<= v 10)
+	LPAREN_T        (
+	COND_T          cond
+	LPAREN_T        (
+	LPAREN_T        (
+	LTE_T           <=
+	IDENT_T         v
+	NUMLIT_T        10
+	RPAREN_T        )
+   4: 				(if (> v 5)
+	LPAREN_T        (
+	IF_T            if
+	LPAREN_T        (
+	GT_T            >
+	IDENT_T         v
+	NUMLIT_T        5
+	RPAREN_T        )
+   5: 					(* (+ v) (- v))
+	LPAREN_T        (
+	MULT_T          *
+	LPAREN_T        (
+	PLUS_T          +
+	IDENT_T         v
+	RPAREN_T        )
+	LPAREN_T        (
+	MINUS_T         -
+	IDENT_T         v
+	RPAREN_T        )
+	RPAREN_T        )
+   6: 					(round (/ v (modulo v 3)))
+	LPAREN_T        (
+	ROUND_T         round
+	LPAREN_T        (
+	DIV_T           /
+	IDENT_T         v
+	LPAREN_T        (
+	MODULO_T        modulo
+	IDENT_T         v
+	NUMLIT_T        3
+	RPAREN_T        )
+	RPAREN_T        )
+	RPAREN_T        )
+   7: 				)) 
+	RPAREN_T        )
+	RPAREN_T        )
+   8: 			((= v 11) (cons v ls))
+	LPAREN_T        (
+	LPAREN_T        (
+	EQUALTO_T       =
+	IDENT_T         v
+	NUMLIT_T        11
+	RPAREN_T        )
+	LPAREN_T        (
+	CONS_T          cons
+	IDENT_T         v
+	IDENT_T         ls
+	RPAREN_T        )
+	RPAREN_T        )
+   9: 			((< v 13) (cdar ls))
+	LPAREN_T        (
+	LPAREN_T        (
+	LT_T            <
+	IDENT_T         v
+	NUMLIT_T        13
+	RPAREN_T        )
+	LPAREN_T        (
+	LISTOP_T        cdar
+	IDENT_T         ls
+	RPAREN_T        )
+	RPAREN_T        )
+  10: 			((or (number? v) (list? ls) (zero? v) (string? v)) v)
+	LPAREN_T        (
+	LPAREN_T        (
+	OR_T            or
+	LPAREN_T        (
+	NUMBERP_T       number?
+	IDENT_T         v
+	RPAREN_T        )
+	LPAREN_T        (
+	LISTP_T         list?
+	IDENT_T         ls
+	RPAREN_T        )
+	LPAREN_T        (
+	ZEROP_T         zero?
+	IDENT_T         v
+	RPAREN_T        )
+	LPAREN_T        (
+	STRINGP_T       string?
+	IDENT_T         v
+	RPAREN_T        )
+	RPAREN_T        )
+	IDENT_T         v
+	RPAREN_T        )
+  11: 			(else (cond ((null? ls) "empty")))
+	LPAREN_T        (
+	ELSE_T          else
+	LPAREN_T        (
+	COND_T          cond
+	LPAREN_T        (
+	LPAREN_T        (
+	NULLP_T         null?
+	IDENT_T         ls
+	RPAREN_T        )
+	STRLIT_T        "empty"
+	RPAREN_T        )
+	RPAREN_T        )
+	RPAREN_T        )
+  12: 		)
+	RPAREN_T        )
+  13: 	)
+	RPAREN_T        )
+  14: )
+	RPAREN_T        )
+  15: 
+  16: (define (main)
+	LPAREN_T        (
+	DEFINE_T        define
+	LPAREN_T        (
+	IDENT_T         main
+	RPAREN_T        )
+  17: 	(if (and (>= 7 5) (not (>= 5 7)))
+	LPAREN_T        (
+	IF_T            if
+	LPAREN_T        (
+	AND_T           and
+	LPAREN_T        (
+	GTE_T           >=
+	NUMLIT_T        7
+	NUMLIT_T        5
+	RPAREN_T        )
+	LPAREN_T        (
+	NOT_T           not
+	LPAREN_T        (
+	GTE_T           >=
+	NUMLIT_T        5
+	NUMLIT_T        7
+	RPAREN_T        )
+	RPAREN_T        )
+	RPAREN_T        )
+  18: 		(display (funky 5 '(a 5 "hello world" cons if display
+	LPAREN_T        (
+	DISPLAY_T       display
+	LPAREN_T        (
+	IDENT_T         funky
+	NUMLIT_T        5
+	SQUOTE_T        '
+	LPAREN_T        (
+	IDENT_T         a
+	NUMLIT_T        5
+	STRLIT_T        "hello world"
+	CONS_T          cons
+	IF_T            if
+	DISPLAY_T       display
+  19: 			    newline cadr and or not define let 
+	NEWLINE_T       newline
+	LISTOP_T        cadr
+	AND_T           and
+	OR_T            or
+	NOT_T           not
+	DEFINE_T        define
+	LET_T           let
+  20: 			    number? list? zero? null?
+	NUMBERP_T       number?
+	LISTP_T         list?
+	ZEROP_T         zero?
+	NULLP_T         null?
+  21: 			    string? + - / * modulo round = > < >=
+	STRINGP_T       string?
+	PLUS_T          +
+	MINUS_T         -
+	DIV_T           /
+	MULT_T          *
+	MODULO_T        modulo
+	ROUND_T         round
+	EQUALTO_T       =
+	GT_T            >
+	LT_T            <
+	GTE_T           >=
+  22: 			    <= 'cond else)))
+	LTE_T           <=
+	SQUOTE_T        '
+	COND_T          cond
+	ELSE_T          else
+	RPAREN_T        )
+	RPAREN_T        )
+	RPAREN_T        )
+  23: 	)
+	RPAREN_T        )
+  24: 	(newline)
+	LPAREN_T        (
+	NEWLINE_T       newline
+	RPAREN_T        )
+  25: )
+	RPAREN_T        )
+  26: 
+  27: (main)
+	LPAREN_T        (
+	IDENT_T         main
+	RPAREN_T        )
+	EOF_T           
+	EOF_T           
+0 errors found in input file

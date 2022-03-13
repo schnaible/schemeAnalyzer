@@ -1,0 +1,223 @@
+Input file: ./P3-4.ss
+   1: (define (main)
+	LPAREN_T        (
+	DEFINE_T        define
+	LPAREN_T        (
+	IDENT_T         main
+	RPAREN_T        )
+   2: 	(display (+ 6 3))
+	LPAREN_T        (
+	DISPLAY_T       display
+	LPAREN_T        (
+	PLUS_T          +
+	NUMLIT_T        6
+	NUMLIT_T        3
+	RPAREN_T        )
+	RPAREN_T        )
+   3: 	(newline)
+	LPAREN_T        (
+	NEWLINE_T       newline
+	RPAREN_T        )
+   4: 	(display (+ 4.1 2.5))
+	LPAREN_T        (
+	DISPLAY_T       display
+	LPAREN_T        (
+	PLUS_T          +
+	NUMLIT_T        4.1
+	NUMLIT_T        2.5
+	RPAREN_T        )
+	RPAREN_T        )
+   5: 	(newline)
+	LPAREN_T        (
+	NEWLINE_T       newline
+	RPAREN_T        )
+   6: 	(display (+ 4.7 2.5))
+	LPAREN_T        (
+	DISPLAY_T       display
+	LPAREN_T        (
+	PLUS_T          +
+	NUMLIT_T        4.7
+	NUMLIT_T        2.5
+	RPAREN_T        )
+	RPAREN_T        )
+   7: 	(newline)
+	LPAREN_T        (
+	NEWLINE_T       newline
+	RPAREN_T        )
+   8: 	(display (- 6 3))
+	LPAREN_T        (
+	DISPLAY_T       display
+	LPAREN_T        (
+	MINUS_T         -
+	NUMLIT_T        6
+	NUMLIT_T        3
+	RPAREN_T        )
+	RPAREN_T        )
+   9: 	(newline)
+	LPAREN_T        (
+	NEWLINE_T       newline
+	RPAREN_T        )
+  10: 	(display (- 4.1 2.5))
+	LPAREN_T        (
+	DISPLAY_T       display
+	LPAREN_T        (
+	MINUS_T         -
+	NUMLIT_T        4.1
+	NUMLIT_T        2.5
+	RPAREN_T        )
+	RPAREN_T        )
+  11: 	(newline)
+	LPAREN_T        (
+	NEWLINE_T       newline
+	RPAREN_T        )
+  12: 	(display (- 4.7 2.5))
+	LPAREN_T        (
+	DISPLAY_T       display
+	LPAREN_T        (
+	MINUS_T         -
+	NUMLIT_T        4.7
+	NUMLIT_T        2.5
+	RPAREN_T        )
+	RPAREN_T        )
+  13: 	(newline)
+	LPAREN_T        (
+	NEWLINE_T       newline
+	RPAREN_T        )
+  14: 	(display (* 6 3))
+	LPAREN_T        (
+	DISPLAY_T       display
+	LPAREN_T        (
+	MULT_T          *
+	NUMLIT_T        6
+	NUMLIT_T        3
+	RPAREN_T        )
+	RPAREN_T        )
+  15: 	(newline)
+	LPAREN_T        (
+	NEWLINE_T       newline
+	RPAREN_T        )
+  16: 	(display (* 4.1 2.5))
+	LPAREN_T        (
+	DISPLAY_T       display
+	LPAREN_T        (
+	MULT_T          *
+	NUMLIT_T        4.1
+	NUMLIT_T        2.5
+	RPAREN_T        )
+	RPAREN_T        )
+  17: 	(newline)
+	LPAREN_T        (
+	NEWLINE_T       newline
+	RPAREN_T        )
+  18: 	(display (* 4.7 2.5))
+	LPAREN_T        (
+	DISPLAY_T       display
+	LPAREN_T        (
+	MULT_T          *
+	NUMLIT_T        4.7
+	NUMLIT_T        2.5
+	RPAREN_T        )
+	RPAREN_T        )
+  19: 	(newline)
+	LPAREN_T        (
+	NEWLINE_T       newline
+	RPAREN_T        )
+  20: 	(display (/ 6 3))
+	LPAREN_T        (
+	DISPLAY_T       display
+	LPAREN_T        (
+	DIV_T           /
+	NUMLIT_T        6
+	NUMLIT_T        3
+	RPAREN_T        )
+	RPAREN_T        )
+  21: 	(newline)
+	LPAREN_T        (
+	NEWLINE_T       newline
+	RPAREN_T        )
+  22: 	(display (/ 4.1 2.5))
+	LPAREN_T        (
+	DISPLAY_T       display
+	LPAREN_T        (
+	DIV_T           /
+	NUMLIT_T        4.1
+	NUMLIT_T        2.5
+	RPAREN_T        )
+	RPAREN_T        )
+  23: 	(newline)
+	LPAREN_T        (
+	NEWLINE_T       newline
+	RPAREN_T        )
+  24: 	(display (/ 4.7 2.5))
+	LPAREN_T        (
+	DISPLAY_T       display
+	LPAREN_T        (
+	DIV_T           /
+	NUMLIT_T        4.7
+	NUMLIT_T        2.5
+	RPAREN_T        )
+	RPAREN_T        )
+  25: 	(newline)
+	LPAREN_T        (
+	NEWLINE_T       newline
+	RPAREN_T        )
+  26: 	(display (modulo 6 3))
+	LPAREN_T        (
+	DISPLAY_T       display
+	LPAREN_T        (
+	MODULO_T        modulo
+	NUMLIT_T        6
+	NUMLIT_T        3
+	RPAREN_T        )
+	RPAREN_T        )
+  27: 	(newline)
+	LPAREN_T        (
+	NEWLINE_T       newline
+	RPAREN_T        )
+  28: 	(display (modulo 14 8))
+	LPAREN_T        (
+	DISPLAY_T       display
+	LPAREN_T        (
+	MODULO_T        modulo
+	NUMLIT_T        14
+	NUMLIT_T        8
+	RPAREN_T        )
+	RPAREN_T        )
+  29: 	(newline)
+	LPAREN_T        (
+	NEWLINE_T       newline
+	RPAREN_T        )
+  30: 	(display (round 6.3))
+	LPAREN_T        (
+	DISPLAY_T       display
+	LPAREN_T        (
+	ROUND_T         round
+	NUMLIT_T        6.3
+	RPAREN_T        )
+	RPAREN_T        )
+  31: 	(newline)
+	LPAREN_T        (
+	NEWLINE_T       newline
+	RPAREN_T        )
+  32: 	(display (round 14.8))
+	LPAREN_T        (
+	DISPLAY_T       display
+	LPAREN_T        (
+	ROUND_T         round
+	NUMLIT_T        14.8
+	RPAREN_T        )
+	RPAREN_T        )
+  33: 	(newline)
+	LPAREN_T        (
+	NEWLINE_T       newline
+	RPAREN_T        )
+  34: )
+	RPAREN_T        )
+  35: 
+  36: (main)
+	LPAREN_T        (
+	IDENT_T         main
+	RPAREN_T        )
+	EOF_T           
+	EOF_T           
+0 errors found in input file

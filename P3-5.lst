@@ -1,0 +1,15 @@
+Input file: ./P3-5.ss
+   1: (define (function1 V)
+   2: 	(display V)
+   3: 	(newline)
+   4: )
+   5: 
+   6: (define (main)
+   7: 	(function1 5)
+   8: 	(function1 'a)
+   9: 	(function1 "SSU")
+  10: 	(function1 '(1 2 3))
+  11: )
+  12: 
+  13: (main)
+0 errors found in input file
